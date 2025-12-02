@@ -1,0 +1,68 @@
+.App {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.chat-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.message-bubble {
+    max-width: 80%;
+    padding: 12px 16px;
+    border-radius: 18px;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background: #007bff;
+    color: white;
+    margin-left: auto;
+    border-bottom-right-radius: 4px;
+}
+
+.bot-message {
+    background: #f8f9fa;
+    color: #333;
+    margin-right: auto;
+    border-bottom-left-radius: 4px;
+    border: 1px solid #dee2e6;
+}
+
+.chart-container {
+    height: 300px;
+    position: relative;
+}
+
+.table-responsive {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.suggestion-btn {
+    transition: all 0.2s;
+}
+
+.suggestion-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loading-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
